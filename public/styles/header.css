@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  size: 400px;
+  width: 100%;
+  justify-content: center;
+  align-items: baseline;
+}
+
+/* .imgDisplay {
+  display: flex;
+  justify-content: center;
+} */
+
+.displayName {
+  display: flex;
+  justify-content: center;
+}
