@@ -25,5 +25,16 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #545149;
+  background-color: #f4f1ec;
+}
+
+
+
 
 

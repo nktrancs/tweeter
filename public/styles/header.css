@@ -2,16 +2,19 @@ header {
   display: flex;
   size: 400px;
   width: 100%;
-  justify-content: center;
-  align-items: baseline;
+  padding-top: 5em;
+  flex-direction: column;
+  background-color: orange;
 }
 
-/* .imgDisplay {
+.imgDisplay {
   display: flex;
   justify-content: center;
-} */
+}
 
 .displayName {
   display: flex;
   justify-content: center;
+  position: relative;
+  bottom: 30px;
 }
