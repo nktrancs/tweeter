@@ -32,3 +32,115 @@ main > form {
   color: white;
 }
 
+/* //////////////////////////////////////// */
+
+
+
+/* .newtweet header {
+  display: flex;
+  background-color: thistle;
+  padding: 1em;
+  height: 200px;
+}
+
+.tweetbox footer {
+  display: flex;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-top: 2px solid black;
+  width: 90%;
+  justify-content: space-between;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+} 
+
+.tweetbox {
+  display: flex;
+  flex-direction: row;
+} */
+
+
+/* .tweetbox {
+  display: flex;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-top: 2px solid black;
+  width: 90%;
+  justify-content: space-between;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}  */
+
+
+
+.tweetscontainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  border: 2px solid black;
+  background-color: transparent;
+}
+
+.tweetbox:hover {
+  display: flex;
+  flex-direction: column;
+  text-shadow: 1px 1px 2px thistle, 0 0 1em thistle, 0 0 0.2em thistle;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.tweetheader {
+  display: flex;
+  background-color: transparent;
+  justify-content: space-between;
+  padding: 1em;
+  height: 200px;
+  margin-left: 1em;
+}
+
+.avatar {
+  display: flex;
+  column-gap: 1em;
+}
+
+.tweethandler {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweetbody {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 2em;
+}
+
+.tweetbox footer {
+  display: flex;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-top: 2px solid black;
+  width: 95%;
+  margin-left: 1.2em;
+  justify-content: space-between;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+} 
+
+.icons {
+  font-size: medium;
+  align-items: center;
+  padding-top: 0.5em;
+}
+
+.fa-flag:hover {
+  color: red;
+}
+
+.fa-retweet:hover {
+  color: red;
+}
+
+.fa-heart:hover {
+  color: red;
+}
+
+
