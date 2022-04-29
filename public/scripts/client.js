@@ -7,6 +7,7 @@
 
 $(document).ready(function() {
 
+  //loads new tweets
   const loadTweets = (function() {
     $.get('/tweets')
     .then((data) => {
@@ -17,7 +18,14 @@ $(document).ready(function() {
   $('.error').hide();
   loadTweets();
 
+  //safe function to prevent user attacks via JS
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
 
+  //calls when submitting new tweets
   $('.tweetbutton').on('click', function (event) {
     event.preventDefault();
     if ($('.tweetform').val().length < 140) {
@@ -30,9 +38,9 @@ $(document).ready(function() {
           $('.error').hide();
       })
     }
-    if ($('.tweetform').val().length = 0) {
+    if ($('.tweetform').val().length === 0) {
       $('.error').show();
-      $('.error').append("Can't tweet blank!");
+      $('.error').append("Tweet can't be blank!");
     }
     if ($('.tweetform').val().length > 140) {
       $('.error').show();
@@ -40,6 +48,7 @@ $(document).ready(function() {
     }
   });
 
+  //creates tweet element
   const createTweetElement = function(tweet) {
     let $tweet = $(
     `<article class="tweetscontainer">
@@ -55,7 +64,7 @@ $(document).ready(function() {
         </header>
     
         <div class="tweetbody">
-          <p>${tweet.content.text}</p>
+          <p>${escape(tweet.content.text)}</p>
         </div>
         
         <footer>
@@ -73,7 +82,7 @@ $(document).ready(function() {
     return $tweet;
   }
 
-
+  //renders all tweets by looping
   const renderTweets = function(tweets) {
     // loops through tweets
     for (let tweet in tweets) {
@@ -87,6 +96,8 @@ $(document).ready(function() {
   }
 
 });
+
+
 // const data = [
 //   {
 //     "user": {
@@ -112,6 +123,11 @@ $(document).ready(function() {
 //   }
 // ]
 
-
+// //attacks user with blank page
+// <script>
+//   $("body").empty();
+// </script>
+// //use escape method
+// const safeHTML = `<p>${escape(textFromUser)}</p>`;
 
 
