@@ -3,7 +3,6 @@
 $(document).ready(function() {
   limit = 140;
   $('.tweetform').on('input', function() {
-    console.log("typed");
     if($(this).val() === ''){
       limit = 140;
     }
@@ -15,13 +14,17 @@ $(document).ready(function() {
 });
 
 
+// //disable button if char <=0 || > 140
+// $(document).ready(function(){
+// 	$('.tweetbutton').keyup(function(){
+//     console.log($('.tweetform').val())
+//     if($('.tweetform').val().length < 140){
+//       $('.tweetbutton').removeAttr('disabled');
+//       console.log("test", $('.tweetform').val())
+// 		} else {
+//       $('.tweetbutton').attr('disabled');
+// 		}
+// 	}).trigger('keyup');
+// });
 
-$(document).ready(function(){
-	$('.tweetbutton').keyup(function(){
-		if($('.tweetform').val().length > 140){
-			$('tweetbutton').removeAttr('disabled');
-		} else {
-			$('tweetbutton"]').attr('disabled','disabled');
-		}
-	}).trigger('keyup');
-});
+
