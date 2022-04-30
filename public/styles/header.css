@@ -1,20 +1,52 @@
-header.mainheader {
-  display: flex;
-  size: 400px;
-  width: 100%;
-  padding-top: 5em;
-  flex-direction: column;
-  background-color: orange;
-}
+
 
 .imgDisplay {
-  display: flex;
-  justify-content: center;
+  background-color: #4056A1;
+  padding: 10px;
+  text-align: center;
 }
 
 .displayName {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  bottom: 30px;
+  background-color: #4056A1;
+  padding: 0 10px 10px 10px;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 25px;
+  color: white;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 1024px) {
+  header.mainheader {
+    padding-top: 2em;
+  }
+
+  .imgDisplay {
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .displayName {
+    background-color: orange;
+    padding: 0 10px 10px 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header.mainheader {
+    padding-top: 2em;
+  }
+
+  .imgDisplay {
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .displayName {
+    background-color: orange;
+    padding: 0 10px 10px 10px;
+
+  }
 }

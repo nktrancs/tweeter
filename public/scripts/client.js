@@ -40,11 +40,13 @@ $(document).ready(function() {
     }
     if ($('.tweetform').val().length === 0) {
       $('.error').show();
-      $('.error').append("Tweet can't be blank!");
+      $('.error').text("Tweet can't be blank!");
+      $('.error').slideUp(4000)
     }
     if ($('.tweetform').val().length > 140) {
       $('.error').show();
-      $('.error').append("Tweet is too long!");
+      $('.error').text("Tweet is too long!");
+      $('.error').slideUp(4000)
     }
   });
 
