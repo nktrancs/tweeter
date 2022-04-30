@@ -38,11 +38,13 @@ $(document).ready(function() {
           $('.error').hide();
       })
     }
+
     if ($('.tweetform').val().length === 0) {
       $('.error').show();
       $('.error').text("Tweet can't be blank!");
       $('.error').slideUp(4000)
     }
+    
     if ($('.tweetform').val().length > 140) {
       $('.error').show();
       $('.error').text("Tweet is too long!");
@@ -82,7 +84,7 @@ $(document).ready(function() {
     </article>`);
   
     return $tweet;
-  }
+  };
 
   //renders all tweets by looping
   const renderTweets = function(tweets) {
@@ -94,42 +96,13 @@ $(document).ready(function() {
       // console.log("test:", tweeted)
       // takes return value and appends it to the tweets container
       $(".tweets-container").prepend(tweeted)
-    }
-  }
+    };
+  };
 
 });
 
 
-// const data = [
-//   {
-//     "user": {
-//       "name": "Newton",
-//       "avatars": "https://i.imgur.com/73hZDYK.png"
-//       ,
-//       "handle": "@SirIsaac"
-//     },
-//     "content": {
-//       "text": "If I have seen further it is by standing on the shoulders of giants"
-//     },
-//     "created_at": 1461116232227
-//   },
-//   {
-//     "user": {
-//       "name": "Descartes",
-//       "avatars": "https://i.imgur.com/nlhLi3I.png",
-//       "handle": "@rd" },
-//     "content": {
-//       "text": "Je pense , donc je suis"
-//     },
-//     "created_at": 1461113959088
-//   }
-// ]
 
-// //attacks user with blank page
-// <script>
-//   $("body").empty();
-// </script>
-// //use escape method
-// const safeHTML = `<p>${escape(textFromUser)}</p>`;
+
 
 

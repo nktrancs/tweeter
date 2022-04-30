@@ -36,46 +36,6 @@ main > form {
   color: white;
 }
 
-/* //////////////////////////////////////// */
-
-
-
-/* .newtweet header {
-  display: flex;
-  background-color: thistle;
-  padding: 1em;
-  height: 200px;
-}
-
-.tweetbox footer {
-  display: flex;
-  padding-left: 2em;
-  padding-right: 2em;
-  border-top: 2px solid black;
-  width: 90%;
-  justify-content: space-between;
-  padding-top: 0.3em;
-  padding-bottom: 0.3em;
-} 
-
-.tweetbox {
-  display: flex;
-  flex-direction: row;
-} */
-
-
-/* .tweetbox {
-  display: flex;
-  padding-left: 2em;
-  padding-right: 2em;
-  border-top: 2px solid black;
-  width: 90%;
-  justify-content: space-between;
-  padding-top: 0.3em;
-  padding-bottom: 0.3em;
-}  */
-
-
 
 .tweetscontainer {
   display: flex;
@@ -163,22 +123,22 @@ main > form {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-.desktop{
-  display: flex;
-  background-color: transparent;
-}
+  .desktop{
+    display: flex;
+    background-color: transparent;
+  }
 
 
-.mainheader {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 30%;
-  background-color: transparent;
-}
+  .mainheader {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    background-color: transparent;
+  }
 
-.container {
-  flex-basis: 70%;
-}
+  .container {
+    flex-basis: 70%;
+  }
 
 
 }
