@@ -20,3 +20,10 @@ Responsive page design built using CSS, AJAX requests and jQuery.
 
 ## Demo
 
+!["Desktop View"](https://github.com/nktrancs/tweeter/blob/master/doc/desktopView.png)
+
+!["Mobile View"](https://github.com/nktrancs/tweeter/blob/master/doc/mobileView.png)
+
+!["Writing tweets"](https://github.com/nktrancs/tweeter/blob/master/doc/composeTweet.png)
+
+!["Posting tweets"](https://github.com/nktrancs/tweeter/blob/master/doc/composedTweet.png)
